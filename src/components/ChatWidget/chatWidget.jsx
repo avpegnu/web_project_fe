@@ -3,7 +3,8 @@ import { getChatHistory, sendMessage } from "../../services/chat";
 import { io } from "socket.io-client";
 import "./chatWidget.css";
 
-const socket = io("http://localhost:8080");
+const authUrl = import.meta.env.VITE_BE_URL || "http://localhost:8080";
+const socket = io(authUrl);
 
 const ChatWidget = ({ userId, isAdmin = false }) => {
   const [open, setOpen] = useState(false);
