@@ -130,7 +130,7 @@ const Signup = () => {
 
         <p className="login-signup-login">
           Already have an account?{" "}
-          <Link to="/login">
+          <Link to="/login" style={{ textDecoration: "none" }}>
             <span>Log In Here</span>
           </Link>
         </p>
