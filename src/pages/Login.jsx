@@ -103,7 +103,7 @@ const Login = () => {
         <button onClick={handleLogin}>Log In</button>
         <p className="login-signup-login">
           Don't have an account?{" "}
-          <Link to="/signup">
+          <Link to="/signup" style={{ textDecoration: "none" }}>
             <span>Sign Up Here</span>
           </Link>
         </p>
