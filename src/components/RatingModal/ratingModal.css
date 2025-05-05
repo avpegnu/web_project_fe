@@ -1,0 +1,94 @@
+/* Modal Overlay */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 24rem;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Modal Title */
+.modal-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Product Name */
+.modal-product-name {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Star Rating */
+.stars {
+  display: flex;
+  gap: 8px;
+  font-size: 1.5rem;
+  color: #f5f3c5;
+}
+
+.star {
+  cursor: pointer;
+}
+
+.star.selected {
+  color: #f9f21e;
+}
+
+/* Textarea */
+.textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+/* Modal Actions */
+.modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+/* Cancel Button */
+.cancel-button {
+  padding: 8px 16px;
+  background-color: #bdc3c7;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.cancel-button:hover {
+  background-color: #95a5a6;
+}
+
+/* Submit Button */
+.submit-button {
+  padding: 8px 16px;
+  background-color: #8729b9;
+  color: white;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #6e2496;
+}

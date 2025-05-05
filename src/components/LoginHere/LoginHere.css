@@ -1,0 +1,82 @@
+/* .login-here-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
+  max-width: 680px;
+  background: white;
+  padding: 50px 70px;
+  border-radius: 30px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.login-here-sayhi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  margin-top: 30px;
+  font-size: 12px;
+}
+
+.login-here-sayhi h1 {
+  color: #350d76;
+  font-size: 48px;
+  font-weight: 700px;
+}
+
+.login-here-sayhi img {
+  width: 100px;
+  height: auto;
+}
+
+.login-here-fields {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.login-here-fields p {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.login-here-fields input {
+  margin-top: 10px;
+  width: 100%;
+  max-width: 650px;
+  height: 60px;
+  padding: 12px;
+  outline: none;
+  background-color: white;
+  font-size: 16px;
+  border: 2px solid #d1d5db;
+  border-radius: 12px;
+}
+
+.btn {
+  width: 100%;
+  max-width: 650px;
+  height: 50px;
+  color: white;
+  margin-top: 10px;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  background-color: #7c41db;
+}
+
+.login-here-forgot {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.login-here-forgot p {
+  font-size: 14px;
+} */

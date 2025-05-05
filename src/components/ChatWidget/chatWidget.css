@@ -1,0 +1,124 @@
+.chat-widget {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 50;
+}
+
+.chat-toggle-button {
+  background-color: #6a1e8a;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 9999px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+  border: none;
+  cursor: pointer;
+}
+
+.chat-toggle-button:hover {
+  background-color: #6e267f;
+}
+
+.chat-box {
+  width: 320px;
+  height: 384px;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e7eb;
+}
+
+.chat-header {
+  background-color: #6a1e8a;
+  color: white;
+  padding: 8px 16px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+}
+
+.chat-close-button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.chat-content {
+  flex: 1;
+  padding: 12px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chat-message-wrapper {
+  display: flex;
+}
+
+.chat-message-wrapper.sent {
+  justify-content: flex-end;
+}
+
+.chat-message-wrapper.received {
+  justify-content: flex-start;
+}
+
+.chat-message {
+  max-width: 70%;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #f3f4f6;
+}
+
+.chat-message-wrapper.sent .chat-message {
+  background-color: #f0d1fa;
+  text-align: right;
+}
+
+.chat-input-area {
+  padding: 8px;
+  border-top: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.chat-input {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 9999px;
+  padding: 6px 12px;
+  font-size: 14px;
+  outline: none;
+}
+
+.chat-input:focus {
+  border-color: #8e30cd;
+  box-shadow: 0 0 0 2px #bfdbfe;
+}
+
+.chat-send-button {
+  background-color: #6a1e8a;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 9999px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.chat-send-button:hover {
+  background-color: #571971;
+}

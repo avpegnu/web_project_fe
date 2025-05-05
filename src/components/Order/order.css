@@ -1,0 +1,363 @@
+.orders-container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  min-height: 60vh;
+}
+
+.status-filter {
+  width: 100%;
+}
+
+.status-filter-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.status-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.status-button {
+  white-space: nowrap;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  text-align: left;
+  font-weight: 500;
+  /* border: 1px solid; */
+  cursor: pointer;
+}
+
+.status-button.selected {
+  background-color: #484848;
+  color: white;
+  border-color: none;
+  cursor: default;
+}
+
+.status-button.unselected {
+  background-color: #f3f4f6;
+  color: #1f2937;
+  border-color: #e5e7eb;
+  cursor: pointer;
+}
+
+.status-button.unselected:hover {
+  background-color: #e5e7eb;
+}
+
+.orders-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.no-orders {
+  color: #6b7280;
+  font-style: italic;
+}
+
+.order-card {
+  border-width: 1px;
+  border-color: #e5e7eb;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+  transition: all 0.2s;
+}
+
+.order-card:hover {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -2px rgba(0, 0, 0, 0.1);
+}
+
+.order-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.order-id {
+  margin-top: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.status-label {
+  display: inline-block;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  font-size: 0.75rem;
+  border-radius: 0.375rem;
+}
+
+.status-pending {
+  background-color: #fef08a;
+  color: #8a5e13;
+}
+
+.status-completed {
+  background-color: #bbf7d0;
+  color: #047857;
+}
+
+.status-cancelled {
+  background-color: #fecaca;
+  color: #b91c1c;
+}
+
+.status-default {
+  background-color: #e5e7eb;
+  color: #4b5563;
+}
+
+.order-date {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #6b7280;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.shipping-address {
+  margin-bottom: 1rem;
+}
+
+.shipping-address h4 {
+  font-weight: 600;
+}
+
+.order-products {
+  margin-top: 0.75rem;
+}
+
+.order-products h4 {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.order-products .grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1rem;
+}
+
+.product-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  transition: background-color 0.2s;
+}
+
+.product-item:hover {
+  background-color: #f9fafb;
+}
+
+.product-item img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e7eb;
+}
+
+.product-details {
+  flex: 1;
+  font-size: 0.875rem;
+  gap: 0.25rem;
+}
+
+.product-details p {
+  margin: 0;
+}
+
+.product-details .font-medium {
+  font-weight: 500;
+}
+
+.product-details .font-semibold {
+  font-weight: 600;
+}
+
+.product-details .text-base {
+  font-size: 1rem;
+}
+
+.product-details .text-green-600 {
+  color: #16a34a;
+}
+
+.product-details button {
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.375rem;
+  background-color: #1d4ed8;
+  color: #ffffff;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.product-details button:hover {
+  background-color: #1e40af;
+}
+
+.product-details .button-repurchase {
+  background-color: #1d4ed8;
+}
+
+.product-details .button-repurchase:hover {
+  background-color: #1e40af;
+}
+
+.order-actions {
+  margin-top: 1.25rem;
+  text-align: right;
+}
+
+.order-actions .buttons-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.order-actions button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.order-actions .received-button {
+  background-color: #16a34a;
+  border: none;
+}
+
+.order-actions .received-button:hover {
+  background-color: #15803d;
+}
+
+.order-actions .cancel-button {
+  background-color: #dc2626;
+  border: none;
+}
+
+.order-actions .cancel-button:hover {
+  background-color: #b91c1c;
+}
+
+.order-actions .disabled {
+  background-color: #d1d5db;
+  cursor: not-allowed;
+}
+
+.cancel-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 50;
+}
+
+.cancel-modal .modal-content {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  max-width: 24rem;
+  width: 100%;
+  text-align: center;
+}
+
+.cancel-modal .modal-header {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.cancel-modal .modal-body {
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.cancel-modal .button-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.cancel-modal button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
+
+.cancel-modal .cancel-button {
+  background-color: #e5e7eb;
+}
+
+.cancel-modal .cancel-button:hover {
+  background-color: #d1d5db;
+}
+
+.cancel-modal .confirm-button {
+  background-color: #dc2626;
+  color: #ffffff;
+}
+
+.cancel-modal .confirm-button:hover {
+  background-color: #b91c1c;
+}
+
+@media (min-width: 768px) {
+  .orders-container {
+    flex-direction: row;
+  }
+  .status-filter {
+    width: 25%;
+  }
+  .status-buttons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .orders-list {
+    width: 75%;
+  }
+  .order-header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .order-date {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 640px) {
+  .order-products .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

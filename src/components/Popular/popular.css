@@ -1,0 +1,165 @@
+.popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  height: 90vh;
+}
+.popular h1 {
+  color: #171717;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.popular hr {
+  width: 200px;
+  height: 6px;
+  border-radius: 10px;
+  background: #252525;
+}
+
+.popular-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  margin-top: 50px;
+}
+
+.popular-arrow {
+  font-size: 40px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.2s;
+  z-index: 2;
+}
+
+.popular-arrow:hover {
+  color: #000;
+}
+
+/* Viewport chứa đúng 1 slide */
+.popular-viewport {
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+/* Slider chứa tất cả slide */
+.popular-slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+  width: 100%;
+  margin-left: 5px;
+}
+
+/* Mỗi slide chứa 4 sản phẩm */
+.popular-slide {
+  display: flex;
+  gap: 30px;
+  min-width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.popular-item {
+  margin-top: 50px;
+}
+
+/* Responsive tùy bạn giữ nguyên phần @media trước đó */
+
+@media (max-width: 1280px) {
+  .popular {
+    height: 70vh;
+  }
+  .popular h1 {
+    font-size: 40px;
+  }
+  .popular hr {
+    width: 160px;
+    height: 4px;
+  }
+  .popular-item {
+    gap: 20px;
+    margin-top: 30px;
+  }
+  .popular-viewport {
+    max-width: 1000px;
+  }
+}
+@media (max-width: 1024px) {
+  .popular {
+    height: 80vh;
+  }
+  .popular h1 {
+    font-size: 30px;
+  }
+  .popular hr {
+    width: 120px;
+    height: 3px;
+  }
+  .popular-item {
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .popular-viewport {
+    max-width: 600px;
+  }
+  .popular-slide {
+    display: grid;
+    grid-template-columns: 0.5fr 0.2fr;
+  }
+}
+@media (max-width: 800px) {
+  .popular {
+    height: 60vh;
+    gap: 6px;
+  }
+  .popular h1 {
+    font-size: 20px;
+  }
+  .popular hr {
+    width: 100px;
+  }
+  .popular-item {
+    gap: 5px;
+  }
+  .popular-viewport {
+    max-width: 400px;
+  }
+}
+@media (max-width: 500px) {
+  .popular {
+    height: 100vh;
+  }
+
+  .popular-viewport {
+    max-width: 330px;
+  }
+
+  .popular-slider {
+    margin: 0 10px;
+  }
+
+  .popular-slide {
+    width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .popular {
+    height: 90vh;
+  }
+
+  .popular-viewport {
+    max-width: 350px;
+  }
+
+  .popular-slide {
+    width: 100%;
+  }
+}
