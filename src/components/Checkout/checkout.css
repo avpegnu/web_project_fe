@@ -485,4 +485,14 @@
   .checkout-price-total {
     font-size: 1.1rem;
   }
+  .button-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .button-group button {
+    width: 50%;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 0;
+  }
 }
