@@ -60,7 +60,7 @@
 /* Mỗi slide chứa 4 sản phẩm */
 .popular-slide {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   min-width: 100%;
   box-sizing: border-box;
   justify-content: center;
@@ -69,8 +69,6 @@
 .popular-item {
   margin-top: 50px;
 }
-
-/* Responsive tùy bạn giữ nguyên phần @media trước đó */
 
 @media (max-width: 1280px) {
   .popular {
@@ -116,7 +114,7 @@
 }
 @media (max-width: 800px) {
   .popular {
-    height: 60vh;
+    height: 70vh;
     gap: 6px;
   }
   .popular h1 {
@@ -147,6 +145,7 @@
 
   .popular-slide {
     width: 100%;
+    gap: 38px;
   }
 }
 
