@@ -163,7 +163,7 @@ const ShopCategory = (props) => {
           </div>
         )}
       </div>
-      <ChatWidget userId={userId} />
+      {userId && <ChatWidget userId={userId} />}
     </>
   );
 };

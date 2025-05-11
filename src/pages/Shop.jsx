@@ -11,7 +11,6 @@ const Shop = () => {
   const userId = getStorageData("user")?.id || null;
   console.log("userId", userId);
 
-
   return (
     <>
       <HelmetProvider>
@@ -23,7 +22,7 @@ const Shop = () => {
         <Offers />
         <NewCollections />
         <NewsLetter />
-        <ChatWidget userId={userId} />
+        {userId && <ChatWidget userId={userId} />}
       </>
     </>
   );

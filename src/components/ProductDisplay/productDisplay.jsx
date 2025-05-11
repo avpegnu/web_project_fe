@@ -126,7 +126,7 @@ const ProductDisplay = (props) => {
           </p>
         </div>
       </div>
-      <ChatWidget userId={userId} />
+      {userId && <ChatWidget userId={userId} />}
     </>
   );
 };
